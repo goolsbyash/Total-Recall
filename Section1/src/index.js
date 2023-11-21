@@ -41,3 +41,17 @@ console.log(48 == '48');
 
 
 // Exercise D: The Farm
+
+let animal = 'cow';
+
+// Condition is false if the case is different
+// ex. animal = 'coW' != 'cow';
+// We may learn later how to best handle this 
+// scenario
+
+// adding 'COW' to condition too
+if ((animal === 'cow') || (animal === 'COW')) {
+    console.log('mooooo');
+} else {
+    console.log('Hey! You\'re not a cow.');
+}
