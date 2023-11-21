@@ -148,6 +148,8 @@ bank_account2 *= 2;
 console.log(`Your bank account should have $${bank_account} in it.`);
 console.log(`With the bonus, your bank account should have $${bank_account2} in it.`);
 
+console.log("=========================");
+
 
 //* Section 3
 
@@ -160,3 +162,21 @@ console.log(`With the bonus, your bank account should have $${bank_account2} in 
 let quotes = ['\"First, solve the problem. Then, write the code.\"', '\"Happiness is an inside job.\"', '\"Whatever you are, be a good one.\"'];
 
 console.log(quotes);
+
+console.log("=========================");
+
+// Exercise C: Accessing Elements
+
+const randomThings = [1, 10, "Hello", true];
+
+// How to access 1st element
+console.log(randomThings[0]);
+
+// Change "Hello" to "World"
+randomThings[2] = "World";
+
+// Check value has been changed
+console.log(randomThings[2]);  // specific index
+console.log(randomThings);     // entire array
+
+console.log("=========================");
