@@ -245,4 +245,16 @@ if (num >= 100) {
 
 console.log("=========================");
 
-//* Exercise
+//* Exercise G: Monkey in the Middle
+
+let num2 = 6;
+
+if (num2 >= 10) {
+    console.log("big number");
+} else if (num2 < 5) {
+    console.log("little number");
+} else {
+    console.log("monkey");
+}
+
+console.log("=========================");
