@@ -122,7 +122,33 @@ for (let i = 0; i <= 100; i++) {
     console.log(`I found a ${i}. Three is a crowd.`);
   } else if (i % 5 === 0) {
     console.log(`I found a ${i}. High five!`);
-  } 
+  } else {
+    continue;
+  }
 }
 
+console.log("=========================");
+
+
 // Exercise D: Savings Account
+
+let bank_account = 0;
+let bank_account2 = 0;
+
+for (let i = 1; i <= 10; i++) {
+    bank_account += i;
+}
+
+// Calculate pay with bonus
+for (let i = 1; i <= 100; i++) {
+    bank_account2 += i;
+}
+bank_account2 *= 2;
+
+console.log(`Your bank account should have $${bank_account} in it.`);
+console.log(`With the bonus, your bank account should have $${bank_account2} in it.`);
+
+
+//* Section 3
+
+// Exerci
