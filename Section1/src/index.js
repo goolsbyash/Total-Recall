@@ -234,3 +234,15 @@ console.log(myArray);
 console.log("=========================");
 
 //* Exercise F: Biggie Smalls
+
+let num = 99;
+
+if (num >= 100) {
+    console.log("big number");
+} else {
+    console.log("little number");
+}
+
+console.log("=========================");
+
+//* Exercise
