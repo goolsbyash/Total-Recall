@@ -77,29 +77,40 @@ if (driverAge >= 16) {
 
 console.log("=========================");
 
-
 //* Section 2: Loops
 
 // Exercise A: The Basics
 
 // print all nums 0- 10 inclusive
 for (let i = 0; i <= 10; i++) {
-    console.log(i);
+  console.log(i);
 }
 
 // print all nums 10 - 400 inclusive
 for (let i = 10; i <= 400; i++) {
-    console.log(i);
+  console.log(i);
 }
 
 // print every 3rd num starting at 12 up to 4000
-for (let i = 12; i < 4000; i+=3) {
-    console.log(i);
+for (let i = 12; i < 4000; i += 3) {
+  console.log(i);
 }
 
 console.log("=========================");
 
 // Exericse B: Get Even
+
+// print all nums 1- 100 and add message for even nums
+for (let i = 0; i <= 100; i++) {
+  if (i % 2 !== 0) {
+    console.log(i);
+  } else if (i % 2 === 0) {
+    console.log(`${i} is an even number`);
+  }
+}
+
+console.log("=========================");
+
 
 // Exercise C: Give Me Five
 
