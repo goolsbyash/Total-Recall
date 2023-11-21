@@ -151,4 +151,12 @@ console.log(`With the bonus, your bank account should have $${bank_account2} in 
 
 //* Section 3
 
-// Exerci
+// Exercise A: Talk about it in your group
+// no coding required for this exercise
+
+// Exercise B: Easy Does It
+
+// Create array called quotes that contains 3 quotes
+let quotes = ['\"First, solve the problem. Then, write the code.\"', '\"Happiness is an inside job.\"', '\"Whatever you are, be a good one.\"'];
+
+console.log(quotes);
