@@ -1,6 +1,6 @@
 //* Section 1: Variables & Data Types
 
-// Exercise A: Variables
+//* Exercise A: Variables
 const myName = "Ashley Goolsby";
 let favoriteLanguage = "Python";
 let newFavoriteLanguage = "JavaScript";
@@ -11,7 +11,7 @@ console.log(
 );
 console.log("=========================");
 
-// Exercise B: Strings
+//* Exercise B: Strings
 let firstVariable = "Hello World";
 firstVariable = 626;
 let secondVariable = firstVariable;
@@ -24,7 +24,7 @@ console.log("Hello, my name is " + yourName + ".");
 
 console.log("=========================");
 
-// Exercise C: Booleans
+//* Exercise C: Booleans
 const a = 4;
 const b = 53;
 const c = 57;
@@ -45,7 +45,7 @@ console.log(48 == "48");
 
 console.log("=========================");
 
-// Exercise D: The Farm
+//* Exercise D: The Farm
 
 let animal = "cow";
 
@@ -63,7 +63,7 @@ if (animal === "cow" || animal === "COW") {
 
 console.log("=========================");
 
-// Exercise E: Driver's Ed
+//* Exercise E: Driver's Ed
 
 let driverAge = 15;
 
@@ -79,7 +79,7 @@ console.log("=========================");
 
 //* Section 2: Loops
 
-// Exercise A: The Basics
+//* Exercise A: The Basics
 
 // print all nums 0- 10 inclusive
 for (let i = 0; i <= 10; i++) {
@@ -98,7 +98,7 @@ for (let i = 12; i < 4000; i += 3) {
 
 console.log("=========================");
 
-// Exericse B: Get Even
+//* Exericse B: Get Even
 
 // print all nums 1- 100 and add message for even nums
 for (let i = 1; i <= 100; i++) {
@@ -111,7 +111,7 @@ for (let i = 1; i <= 100; i++) {
 
 console.log("=========================");
 
-// Exercise C: Give Me Five
+//* Exercise C: Give Me Five
 
 for (let i = 0; i <= 100; i++) {
   
@@ -130,7 +130,7 @@ for (let i = 0; i <= 100; i++) {
 console.log("=========================");
 
 
-// Exercise D: Savings Account
+//* Exercise D: Savings Account
 
 let bank_account = 0;
 let bank_account2 = 0;
@@ -153,10 +153,10 @@ console.log("=========================");
 
 //* Section 3
 
-// Exercise A: Talk about it in your group
+//* Exercise A: Talk about it in your group
 // no coding required for this exercise
 
-// Exercise B: Easy Does It
+//* Exercise B: Easy Does It
 
 // Create array called quotes that contains 3 quotes
 let quotes = ['\"First, solve the problem. Then, write the code.\"', '\"Happiness is an inside job.\"', '\"Whatever you are, be a good one.\"'];
@@ -165,7 +165,7 @@ console.log(quotes);
 
 console.log("=========================");
 
-// Exercise C: Accessing Elements
+//* Exercise C: Accessing Elements
 
 const randomThings = [1, 10, "Hello", true];
 
@@ -181,7 +181,7 @@ console.log(randomThings);     // entire array
 
 console.log("=========================");
 
-// Exercise D: Change Values
+//* Exercise D: Change Values
 
 const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
 
@@ -202,3 +202,35 @@ ourClass.push("Cloud City");
 console.log(ourClass);
 
 console.log("=========================");
+
+//* Exercise E: Mix It Up
+
+const myArray = [5, 10, 500, 20];
+
+// Add "Aegon" to end of array
+myArray.push("Aegon");
+
+// Add another string to end of array
+myArray.push("Ravenclaw");
+
+// Remove the 5 (from the beginning)
+myArray.shift();
+
+// Add "Bob Marley" to the beginning
+myArray.unshift("Bob Marley");
+
+// Remove my string from end of array
+myArray.pop();
+
+// Run reverse()
+myArray.reverse();
+// Yes, this method mutated(changed) the array as it has
+// reversed the order which adjusted the index of the elements.
+// It returned the array in row reverse order.
+
+// Log array to check values
+console.log(myArray);
+
+console.log("=========================");
+
+//* Exercise F: Biggie Smalls
