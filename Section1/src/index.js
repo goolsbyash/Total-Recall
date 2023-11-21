@@ -180,3 +180,25 @@ console.log(randomThings[2]);  // specific index
 console.log(randomThings);     // entire array
 
 console.log("=========================");
+
+// Exercise D: Change Values
+
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+
+// How to access 3rd element
+console.log(ourClass[2]);
+
+// Change value of "GitHub" to "Octocat"
+ourClass[4] = "Octocat";
+
+// Add new element "Cloud City"
+
+// Option 1:
+ourClass.push("Cloud City");
+
+// Option 2:
+// ourClass[5] = "Cloud City";
+
+console.log(ourClass);
+
+console.log("=========================");
