@@ -55,3 +55,15 @@ if ((animal === 'cow') || (animal === 'COW')) {
 } else {
     console.log('Hey! You\'re not a cow.');
 }
+
+// Exercise E: Driver's Ed
+
+let driverAge = 15;
+
+if (driverAge >= 16) {
+    console.log('Here are the keys!');
+} else if (driverAge >=0) {
+    console.log('Sorry, you\'re too young.');
+} else {
+    console.log('Enter age as a positive number.');
+}
