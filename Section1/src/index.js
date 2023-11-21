@@ -114,11 +114,10 @@ console.log("=========================");
 //* Exercise C: Give Me Five
 
 for (let i = 0; i <= 100; i++) {
-  
-  if ((i % 15 === 0)) {
+  if (i % 15 === 0) {
     console.log(`I found a ${i}. Three is a crowd.`);
     console.log(`I found a ${i}. High five!`);
-  } else if (i % 3 === 0){
+  } else if (i % 3 === 0) {
     console.log(`I found a ${i}. Three is a crowd.`);
   } else if (i % 5 === 0) {
     console.log(`I found a ${i}. High five!`);
@@ -129,27 +128,27 @@ for (let i = 0; i <= 100; i++) {
 
 console.log("=========================");
 
-
 //* Exercise D: Savings Account
 
 let bank_account = 0;
 let bank_account2 = 0;
 
 for (let i = 1; i <= 10; i++) {
-    bank_account += i;
+  bank_account += i;
 }
 
 // Calculate pay with bonus
 for (let i = 1; i <= 100; i++) {
-    bank_account2 += i;
+  bank_account2 += i;
 }
 bank_account2 *= 2;
 
 console.log(`Your bank account should have $${bank_account} in it.`);
-console.log(`With the bonus, your bank account should have $${bank_account2} in it.`);
+console.log(
+  `With the bonus, your bank account should have $${bank_account2} in it.`
+);
 
 console.log("=========================");
-
 
 //* Section 3
 
@@ -159,7 +158,11 @@ console.log("=========================");
 //* Exercise B: Easy Does It
 
 // Create array called quotes that contains 3 quotes
-let quotes = ['\"First, solve the problem. Then, write the code.\"', '\"Happiness is an inside job.\"', '\"Whatever you are, be a good one.\"'];
+let quotes = [
+  '"First, solve the problem. Then, write the code."',
+  '"Happiness is an inside job."',
+  '"Whatever you are, be a good one."',
+];
 
 console.log(quotes);
 
@@ -176,8 +179,8 @@ console.log(randomThings[0]);
 randomThings[2] = "World";
 
 // Check value has been changed
-console.log(randomThings[2]);  // specific index
-console.log(randomThings);     // entire array
+console.log(randomThings[2]); // specific index
+console.log(randomThings); // entire array
 
 console.log("=========================");
 
@@ -238,9 +241,9 @@ console.log("=========================");
 let num = 99;
 
 if (num >= 100) {
-    console.log("big number");
+  console.log("big number");
 } else {
-    console.log("little number");
+  console.log("little number");
 }
 
 console.log("=========================");
@@ -250,11 +253,88 @@ console.log("=========================");
 let num2 = 6;
 
 if (num2 >= 10) {
-    console.log("big number");
+  console.log("big number");
 } else if (num2 < 5) {
-    console.log("little number");
+  console.log("little number");
 } else {
-    console.log("monkey");
+  console.log("monkey");
 }
 
 console.log("=========================");
+
+//* Exercise H: What's in Your Closet?
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "Per Scholas hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps",
+];
+
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],
+  [
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs",
+  ],
+  [
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans",
+  ],
+];
+
+// Create array to "hold" Thom's outfit
+let thomsOutfit = [];
+
+// What is Kristyn wearing today?
+console.log(`Kristyn is rocking that ${kristynsCloset[2]} today!`);
+
+// Add "raybans" after "yellow knit hat"
+kristynsCloset.splice(6, 0,"raybans");
+
+// Change "yellow knit hat" to "stained knit hat"
+kristynsCloset[5] = "stained knit hat";
+
+// Log Kristyn's closet after changes
+console.log(kristynsCloset);
+
+// Access first element in Thom's shirts array
+thomsOutfit.unshift(thomsCloset[0][0]);
+
+// Access item from Thom's pants array
+thomsOutfit.push(thomsCloset[1][1]);
+
+// Access item from Thom's accessories array
+thomsOutfit.push(thomsCloset[2][2]);
+
+console.log(`Thom is looking fierce in a ${thomsOutfit[0]}, ${thomsOutfit[1]} and ${thomsOutfit[2]}!`);
+
+// Change "PJs" to "Footie Pajamas"
+thomsCloset[2][2] = "footie pajamas";
+
+// Quick check that value has been changed
+console.log(thomsCloset[2][2]);
+
+console.log("=========================");
+
+//* Section 4: Functions (skip for now)
+
+//* Section 5: Objects
+
+//* Exercise A: Make a User Object
+
+
+//* Exercise B: 
