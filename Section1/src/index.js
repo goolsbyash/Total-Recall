@@ -451,8 +451,23 @@ function maxOfThree (num1, num2, num3) {
 
 }
 
+// Calling function to test results
 console.log(maxOfThree(6, 9, 1));
+console.log("=========================");
 
+//* Exercise H: printLongestWord
+
+function printLongestWord (array) {
+let lengthHolder = [];
+
+    for (let i = 0; i < array.length; i++) {
+        lengthHolder.push(array[i].length);
+    }
+let longestLength = Math.max(...lengthHolder);
+    return array[lengthHolder.indexOf(longestLength)];
+}
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
 //* Section 5: Objects
 
