@@ -338,10 +338,10 @@ console.log("=========================");
 
 // similar to Section 1 Exercise A but uses functions instead
 function printGreeting(name) {
-  console.log(`Hello there, ${name}!`);
+  return `Hello there, ${name}!`;
 }
 
-printGreeting("Ashley");
+console.log(printGreeting("Ashley"));
 
 console.log("=========================");
 
@@ -349,10 +349,10 @@ console.log("=========================");
 
 // created function using arrow declaration
 const printCool = (name) => {
-  console.log(`${name} is cool.`);
+  return `${name} is cool.`;
 };
 
-printCool("Captain Reynolds");
+console.log(printCool("Captain Reynolds"));
 console.log("=========================");
 
 //* Exercise C: calculateCube
@@ -370,29 +370,29 @@ console.log("=========================");
 function isVowel(letter) {
 letter = letter.toLowerCase();
 
-switch (letter) {
-    case "a":
-      return true;
-      break;
-    case "e":
-      return true;
-      break;
-    case "i":
-      return true;
-      break;
-    case "o":
-      return true;
-      break;
-    case "u":
-      return true;
-      break;
-    default:
-      return false;
-  }
+    switch (letter) {
+        case "a":
+        return true;
+        break;
+        case "e":
+        return true;
+        break;
+        case "i":
+        return true;
+        break;
+        case "o":
+        return true;
+        break;
+        case "u":
+        return true;
+        break;
+        default:
+        return false;
+    }
 }
 
 // log results 
-console.log(isVowel('A'));
+console.log(isVowel('E'));
 console.log("=========================");
 
 
@@ -467,7 +467,7 @@ let longestLength = Math.max(...lengthHolder);
     return array[lengthHolder.indexOf(longestLength)];
 }
 
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+console.log(printLongestWord(["BoJack1", "Bojack2", "Diane", "a", "Max", "big", "Todd"]));
 
 //* Section 5: Objects
 
