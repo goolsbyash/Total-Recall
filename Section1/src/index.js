@@ -303,7 +303,7 @@ let thomsOutfit = [];
 console.log(`Kristyn is rocking that ${kristynsCloset[2]} today!`);
 
 // Add "raybans" after "yellow knit hat"
-kristynsCloset.splice(6, 0,"raybans");
+kristynsCloset.splice(6, 0, "raybans");
 
 // Change "yellow knit hat" to "stained knit hat"
 kristynsCloset[5] = "stained knit hat";
@@ -320,7 +320,9 @@ thomsOutfit.push(thomsCloset[1][1]);
 // Access item from Thom's accessories array
 thomsOutfit.push(thomsCloset[2][2]);
 
-console.log(`Thom is looking fierce in a ${thomsOutfit[0]}, ${thomsOutfit[1]} and ${thomsOutfit[2]}!`);
+console.log(
+  `Thom is looking fierce in a ${thomsOutfit[0]}, ${thomsOutfit[1]} and ${thomsOutfit[2]}!`
+);
 
 // Change "PJs" to "Footie Pajamas"
 thomsCloset[2][2] = "footie pajamas";
@@ -335,11 +337,11 @@ console.log("=========================");
 //* Exercise A: printGreeting
 
 // similar to Section 1 Exercise A but uses functions instead
-function printGreeting (name) {
-    console.log(`Hello there, ${name}!`);
+function printGreeting(name) {
+  console.log(`Hello there, ${name}!`);
 }
 
-printGreeting('Ashley');
+printGreeting("Ashley");
 
 console.log("=========================");
 
@@ -347,42 +349,68 @@ console.log("=========================");
 
 // created function using arrow declaration
 const printCool = (name) => {
-    console.log(`${name} is cool.`);
-}
+  console.log(`${name} is cool.`);
+};
 
-printCool('Captain Reynolds');
+printCool("Captain Reynolds");
 console.log("=========================");
 
 //* Exercise C: calculateCube
 
-function calculateCube (num) {
-    return num ** 3;
+function calculateCube(num) {
+  return num ** 3;
 }
 
 console.log(calculateCube(5));
 console.log("=========================");
 
-//* Exercise D: isVowel 
+//* Exercise D: isVowel
+
+// Created function isVowel
+function isVowel(letter) {
+letter = letter.toLowerCase();
+
+switch (letter) {
+    case "a":
+      return true;
+      break;
+    case "e":
+      return true;
+      break;
+    case "i":
+      return true;
+      break;
+    case "o":
+      return true;
+      break;
+    case "u":
+      return true;
+      break;
+    default:
+      return false;
+  }
+}
+
+// log results 
+console.log(isVowel('A'));
+console.log("=========================");
+
+
+//* Exercise E: getTwoLengths
 
 
 //* Section 5: Objects
 
 //* Exercise A: Make a User Object
 
-
 //* Exercise B: Update the User
-
 
 //* Exercise C: Addign keys and values
 
-
 //* Exercise D: Shopaholic!
-
 
 //* Exercise E: Object-within-object
 
-
 //* Exercise F: Loops
-
 
 //* Exercise G: Functions can operate on Objects (skip for now)
