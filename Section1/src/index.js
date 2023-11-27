@@ -330,7 +330,7 @@ console.log(thomsCloset[2][2]);
 
 console.log("=========================");
 
-//* Section 4: Functions (skip for now)
+//* Section 4: Functions
 
 //* Exercise A: printGreeting
 
@@ -345,11 +345,25 @@ console.log("=========================");
 
 //* Exercise B: printCool
 
+// created function using arrow declaration
 const printCool = (name) => {
     console.log(`${name} is cool.`);
 }
 
 printCool('Captain Reynolds');
+console.log("=========================");
+
+//* Exercise C: calculateCube
+
+function calculateCube (num) {
+    return num ** 3;
+}
+
+console.log(calculateCube(5));
+console.log("=========================");
+
+//* Exercise D: isVowel 
+
 
 //* Section 5: Objects
 
