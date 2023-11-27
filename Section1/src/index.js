@@ -398,6 +398,16 @@ console.log("=========================");
 
 //* Exercise E: getTwoLengths
 
+// Create function getTwoLengths
+
+function getTwoLengths (phrase1, phrase2) {
+    let lengthArray = [phrase1.length, phrase2.length];
+    return lengthArray;
+}
+
+// testing function by logging results
+console.log(getTwoLengths('Hank', 'Hippopopalous'));
+console.log("=========================");
 
 //* Section 5: Objects
 
