@@ -409,6 +409,23 @@ function getTwoLengths (phrase1, phrase2) {
 console.log(getTwoLengths('Hank', 'Hippopopalous'));
 console.log("=========================");
 
+//* Exercise F: getMultipleLengths
+
+
+// Created function getMultipleLengths
+function getMultipleLengths (stringArray) {
+    let lengthArray = [];
+    for (let i = 0; i < stringArray.length; i++) {
+        lengthArray.push(stringArray[i].length);
+    }
+    return lengthArray;
+}
+
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+console.log("=========================");
+
+//* Exercise G: maxOfThree
+
 //* Section 5: Objects
 
 //* Exercise A: Make a User Object
