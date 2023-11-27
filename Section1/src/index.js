@@ -332,9 +332,43 @@ console.log("=========================");
 
 //* Section 4: Functions (skip for now)
 
+//* Exercise A: printGreeting
+
+// similar to Section 1 Exercise A but uses functions instead
+function printGreeting (name) {
+    console.log(`Hello there, ${name}!`);
+}
+
+printGreeting('Ashley');
+
+console.log("=========================");
+
+//* Exercise B: printCool
+
+const printCool = (name) => {
+    console.log(`${name} is cool.`);
+}
+
+printCool('Captain Reynolds');
+
 //* Section 5: Objects
 
 //* Exercise A: Make a User Object
 
 
-//* Exercise B: 
+//* Exercise B: Update the User
+
+
+//* Exercise C: Addign keys and values
+
+
+//* Exercise D: Shopaholic!
+
+
+//* Exercise E: Object-within-object
+
+
+//* Exercise F: Loops
+
+
+//* Exercise G: Functions can operate on Objects (skip for now)
